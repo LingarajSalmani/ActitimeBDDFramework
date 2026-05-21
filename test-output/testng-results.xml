@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="32244" started-at="2026-05-21T19:01:02Z" finished-at="2026-05-21T19:01:34Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.runner.TestRunner.TestRunner@6e0e048a]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Chrome" duration-ms="32244" started-at="2026-05-21T19:01:02Z" finished-at="2026-05-21T19:01:34Z">
+      <class name="com.runner.TestRunner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.TestRunner.TestRunner@6e0e048a]" name="setUpClass" is-config="true" duration-ms="1540" started-at="2026-05-22T00:31:02Z" finished-at="2026-05-22T00:31:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.runner.TestRunner.TestRunner@6e0e048a]" name="feature" duration-ms="30114" started-at="2026-05-22T00:31:04Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2026-05-22T00:31:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Java basic programs]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.runner.TestRunner.TestRunner@6e0e048a]" name="tearDownClass" is-config="true" duration-ms="35" started-at="2026-05-22T00:31:34Z" finished-at="2026-05-22T00:31:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.runner.TestRunner.TestRunner -->
+    </test> <!-- Chrome -->
+  </suite> <!-- Suite -->
+</testng-results>

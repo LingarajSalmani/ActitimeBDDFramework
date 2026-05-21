@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Chrome">
+		<parameter name="BrowserName" value="Chrome"></parameter>
+		<classes>
+			<class name="com.runner.TestRunner.TestRunner" />
+		</classes>
+	</test> <!-- Test -->
+	
+</suite> <!-- Suite -->
+
+
+<!--com.fiserv.runner.TestRunner -->
+<!--com.fiserv.runner.FailuerTestRunner -->
+

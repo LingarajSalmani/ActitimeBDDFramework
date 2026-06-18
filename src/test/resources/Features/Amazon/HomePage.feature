@@ -20,4 +20,4 @@ Feature: Java basic programs
 
     Examples: 
       | URL  | 
-      | http://localhost:8080/login.do;jsessionid=9eit3htaih2cs |     
+      | https://www.amazon.in/ |

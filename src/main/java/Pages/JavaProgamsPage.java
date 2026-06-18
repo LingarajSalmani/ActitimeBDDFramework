@@ -9,12 +9,12 @@ public class JavaProgamsPage extends BasePage{
 			
 	}
 	
-	String url="http://localhost:8080/login.do";
+	//String url="https://www.amazon.in/";
 	
 	//Navigate to Actitime application
-	public void LoginToApplication(){
+	public void LoginToApplication(String url){
 		driver.navigate().to(url);
-		System.out.println("Successfuly logged into Actitime application");
+		System.out.println("Successfuly logged into Amazon application");
 	}
 }
   

@@ -15,7 +15,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/resources/Features/Amazon/HomePage.feature",
 		glue = "Steps",
-		tags = "@Regression",
+		tags = "@Test",
 		plugin = {"pretty"})
 				//tags = { "@TestActitime" },
 		// plugin = { "ru.yandex.qatools.allure.cucumberjvm.AllureReporter",

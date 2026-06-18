@@ -3,9 +3,11 @@ package Steps;
 
 import Cucumber.TestContext;
 import Pages.JavaProgamsPage;
-import cucumber.api.PendingException;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+//import cucumber.api.PendingException;
+//import cucumber.api.java.en.Given;
+//import cucumber.api.java.en.Then;
 
 public class JavaProgamsSteps {
 
@@ -24,7 +26,7 @@ public class JavaProgamsSteps {
 	@Given("^User enters Actitime Application url \"([^\"]*)\" in browser$")
 	public void user_enters_Actitime_Application_url_in_browser(String url) throws Throwable {
 
-		javaPrograms.LoginToApplication();
+		javaPrograms.LoginToApplication(url);
 	}
 
 	@Then("^Actitime Application should be open successfully$")

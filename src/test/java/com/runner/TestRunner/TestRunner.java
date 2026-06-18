@@ -3,15 +3,20 @@ package com.runner.TestRunner;
 
 
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.testng.AbstractTestNGCucumberTests;
-
+//import cucumber.api.CucumberOptions;
+//import io.cucumber.testng.AbstractTestNGCucumberTests;
+//import cucumber.api.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 /**
  * Class to start the execution.
  */
 
-@CucumberOptions(features = { "Features" }, glue = { "Steps" },
-		tags = { "@Regression" })
+@CucumberOptions(
+		features = "src/test/resources/Features/Amazon/HomePage.feature",
+		glue = "Steps",
+		tags = "@Regression",
+		plugin = {"pretty"})
 				//tags = { "@TestActitime" },
 		// plugin = { "ru.yandex.qatools.allure.cucumberjvm.AllureReporter",
 		// "pretty","rerun:target/rerun.txt" },

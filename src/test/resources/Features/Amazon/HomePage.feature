@@ -21,3 +21,10 @@ Feature: Java basic programs
     Examples: 
       | URL  | 
       | https://www.amazon.in/ |
+
+   @Test
+   Scenario: Verify home page search box in Amazon website
+     Given User opens Amazon website
+     When User is in home page
+     Then Search box should be display
+

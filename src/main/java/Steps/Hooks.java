@@ -11,17 +11,19 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 import java.util.Set;
 
-public class Hooks extends BasePage {
-    public Hooks(WebDriver driver) {
-        super(driver);
+public class Hooks{
+   TestContext context;
+
+    public Hooks(TestContext context) {
+        this.context=context;
     }
 
 //
 //    public Hooks(WebDriver driver){
 //      super(driver);
 //    }
-//    @After
-//    public void teardown(){
-//        driver.close();
-//    }
+    @After
+    public void teardown(){
+       context.getWebDriverManager().close();
+    }
 }

@@ -14,7 +14,7 @@ public class BasePage {
 	 public BasePage(WebDriver driver){
 		this.driver=driver;
 		PageFactory.initElements(this.driver, this);
-		//this.driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		this.driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	}
 	
 	

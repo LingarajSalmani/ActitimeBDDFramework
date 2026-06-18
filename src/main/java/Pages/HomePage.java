@@ -1,9 +1,16 @@
 package Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 public class HomePage extends BasePage{
 
@@ -30,11 +37,15 @@ public class HomePage extends BasePage{
 	}
 
 	// Verify Home Page
-	public void verifyHomePage() {
+	public void verifyHomePage() throws InterruptedException {
+		Thread.sleep(3000);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='twotabsearchtextbox']")));
+
 		String title = driver.getTitle();
 		System.out.println(title);
 		boolean isPresent=false;
-		if(title.contains("Amazon")){
+		if(title.contains("Online Shopping site in India")){
 			isPresent=true;
 		}
 		Assert.assertTrue(isPresent);

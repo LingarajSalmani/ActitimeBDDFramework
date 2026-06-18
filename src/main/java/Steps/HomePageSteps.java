@@ -30,7 +30,7 @@ public class HomePageSteps {
 	}
 
 	@When("User is in home page")
-	public void user_is_in_home_page() {
+	public void user_is_in_home_page() throws InterruptedException {
 		homePage.verifyHomePage();
 	}
 

@@ -58,4 +58,8 @@ public class WebDriverManager implements IConstants{
 	}
 
 
+	public void close() {
+		driver = new EventFiringWebDriver(web_driver);
+		driver.close();
+	}
 }

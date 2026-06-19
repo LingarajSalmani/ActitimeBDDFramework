@@ -1,5 +1,6 @@
 package Pages;
 
+import Managers.FileReaderManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,10 +15,12 @@ import java.util.concurrent.TimeUnit;
 
 public class HomePage extends BasePage{
 
+
 	public HomePage(WebDriver driver) {
 		super(driver);
-			
+
 	}
+
 	
 	//String url="https://www.amazon.in/";
 	
@@ -32,7 +35,10 @@ public class HomePage extends BasePage{
 
 	// Launch Amazon
 	public void launchAmazon() {
-		driver.get("https://www.amazon.in");
+		//driver.get("https://www.amazon.in");
+		String url=FileReaderManager.getInstance().getConfigFileReader().getApplicationUrl();
+		System.out.println(url);
+		driver.get(url);
 		System.out.println("Amazon web site opend successfully");
 	}
 
